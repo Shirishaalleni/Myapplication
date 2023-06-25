@@ -1,6 +1,6 @@
 package org.example;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import static org.junit.Assert.assertEquals;
@@ -11,8 +11,7 @@ public class AppTest {
      * Rigorous Test :-)
      */
 
-    @Autowired
-    Calci calci;
+    Calci calci = new Calci();
 
     @Test
     public void AddTwoNumbers()
